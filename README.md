@@ -98,7 +98,8 @@ gcloud beta compute instances create <instance-name> \
 --zone=australia-southeast1-b \
 --machine-type=n1-standard-2 \
 --subnet=default \
---network-tier=PREMIUM --metadata=RCON_PASSWORD=changeme,DUCK_DOMAIN=changeme,DUCK_TOKEN=changeme,MOD_URL=https://github.com/kus/rust-modded-server/archive/master.zip,startup-script=echo\ \"Delaying\ for\ 30\ seconds...\"\ \&\&\ sleep\ 30\ \&\&\ cd\ /\ \&\&\ /gcp.sh \
+--network-tier=PREMIUM \
+--metadata=^,@^MOD_URL=https://github.com/kus/rust-modded-server/archive/master.zip,@RCON_PASSWORD=changeme,@SERVER_NAME=Rust\ Server\|5X\|NoBP\|Kits\|Vehicles\|InstaCraft,@SERVER_DESCRIPTION=A\ Rust\ Server\!\\n\\n5X\ gather,\ No\ BPs,\ No\ Decay,\ Kits,\ Vehicles,\ Instant\ craft,@SERVER_TICKRATE=30,@SERVER_MAP=Barren,@SERVER_SEED=123456,@SERVER_SIZE=3000,@SERVER_DECAY=0,@SERVER_CRAFT_INSTANT=1,@startup-script=echo\ \"Delaying\ for\ 30\ seconds...\"\ \#\&\&\ sleep\ 30\ \&\&\ cd\ /\ \&\&\ /gcp.sh \
 --no-restart-on-failure \
 --maintenance-policy=TERMINATE \
 --scopes=https://www.googleapis.com/auth/devstorage.read_only,https://www.googleapis.com/auth/logging.write,https://www.googleapis.com/auth/monitoring.write,https://www.googleapis.com/auth/servicecontrol,https://www.googleapis.com/auth/service.management.readonly,https://www.googleapis.com/auth/trace.append \
