@@ -98,13 +98,13 @@ wget --quiet https://github.com/kus/rust-modded-server/archive/master.zip
 unzip -o -qq master.zip
 
 # Copy plugins
-cp -rlf rust-modded-server-master/oxide/ /home/${user}/${folder}/oxide/
+cp -rlf rust-modded-server-master/custom/oxide/ /home/${user}/${folder}/
 
 # Update server.cfg
-echo -e "server.hostname \"$SERVER_NAME\"\nserver.description \"$SERVER_DESCRIPTION\"\n$(cat rust-modded-server-master/server.cfg)" > /home/${user}/${folder}/server/${SERVER_IDENTITY}/cfg/server.cfg
+echo -e "server.hostname \"$SERVER_NAME\"\nserver.description \"$SERVER_DESCRIPTION\"\n$(cat rust-modded-server-master/custom/server.cfg)" > /home/${user}/${folder}/server/${SERVER_IDENTITY}/cfg/server.cfg
 
 # Update users.cfg
-echo -e "$(cat rust-modded-server-master/users.cfg)" > /home/${user}/${folder}/server/${SERVER_IDENTITY}/cfg/users.cfg
+echo -e "$(cat rust-modded-server-master/custom/users.cfg)" > /home/${user}/${folder}/server/${SERVER_IDENTITY}/cfg/users.cfg
 
 # Remove
 rm -r rust-modded-server-master master.zip

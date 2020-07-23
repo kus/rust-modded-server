@@ -19,7 +19,6 @@ Mod | Version | Why
 [Remover Tool](https://umod.org/plugins/remover-tool) | `4.3.15` | Building and entity removal tool
 [Welcomer](https://umod.org/plugins/welcomer) | `1.5.1` | Provides welcome and join/leave messages
 [Death Notes](https://umod.org/plugins/death-notes) | `6.3.5` | Broadcasts deaths to chat along with detailed information
-[Admin Panel](https://umod.org/plugins/admin-panel) | `1.4.5` | A small GUI panel of clickable commands for admins
 [Time Of Day](https://umod.org/plugins/time-of-day) | `2.3.4` | Alters the day and night duration
 [Blueprint Manager](https://umod.org/plugins/blueprint-manager) | `1.1.4` | Manage blueprints on your server easily
 [No Decay](https://umod.org/plugins/no-decay) | `1.0.40` | Scales or disables decay of items, and deployables
@@ -93,8 +92,6 @@ gcloud compute firewall-rules create rust-server \
 
 ### Create instance
 
-If you don't want to make a [preemptible](https://cloud.google.com/compute/docs/instances/create-start-preemptible-instance#gcloud) instace; remove `--preemptible` from the below command.
-
 ```
 gcloud beta compute instances create <instance-name> \
 --project=<project> \
@@ -104,7 +101,6 @@ gcloud beta compute instances create <instance-name> \
 --network-tier=PREMIUM --metadata=RCON_PASSWORD=changeme,DUCK_DOMAIN=changeme,DUCK_TOKEN=changeme,MOD_URL=https://github.com/kus/rust-modded-server/archive/master.zip,startup-script=echo\ \"Delaying\ for\ 30\ seconds...\"\ \&\&\ sleep\ 30\ \&\&\ cd\ /\ \&\&\ /gcp.sh \
 --no-restart-on-failure \
 --maintenance-policy=TERMINATE \
---preemptible \
 --scopes=https://www.googleapis.com/auth/devstorage.read_only,https://www.googleapis.com/auth/logging.write,https://www.googleapis.com/auth/monitoring.write,https://www.googleapis.com/auth/servicecontrol,https://www.googleapis.com/auth/service.management.readonly,https://www.googleapis.com/auth/trace.append \
 --tags=rust-server \
 --image-family=ubuntu-1804-lts \
@@ -155,7 +151,7 @@ gcloud compute instances delete <instance-name> \
 
 ### Push file to server from local machine
 
-For example a map:
+For example:
 
 ```
 On local:
