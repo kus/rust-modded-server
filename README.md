@@ -26,6 +26,10 @@ Mod | Version | Why
 [Vehicle License](https://umod.org/plugins/vehicle-license) | `1.6.0` | Allows players to buy, spawn and recall: Boat, RHIB, Sedan, HotAirBalloon, MiniCopter and CH47 etc...
 [Car Commander Lite](https://umod.org/plugins/car-commander-lite) | `0.1.3` | Car spawner with added features
 [Spawn Mini](https://umod.org/plugins/spawn-mini) | `2.6.3` | Spawns a mini helicopter on command
+[Portable Vehicles](https://umod.org/plugins/portable-vehicles) | `1.0.9` | Gives vehicles as item to players
+[Teleport Gun](https://umod.org/plugins/teleport-gun) | `0.1.2` | Allows teleporting by shooting guns
+[NTeleportation](https://umod.org/plugins/nteleportation) | `1.3.7` | Multiple teleportation systems for admin and players
+[Copy Paste](https://umod.org/plugins/copy-paste) | `4.1.22` | Copy and paste your buildings to save them or move them
 
 ## Acessing admin menu
 
